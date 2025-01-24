@@ -1,0 +1,50 @@
+body{
+   /* the specificity of this selector is 1 */
+    h1{
+        color: blue;
+    }
+    /* the specificity of this selector is 10+1=11 */
+    h1.Cyellow{
+        color: rgb(251, 255, 0);
+    }
+    /* the specificity of this selector is 10 */
+    .Cred{
+        color: red;
+    }
+    /* the specificity of this selector is 10 */
+    .Cgreen{
+        color: green;
+    }
+    /* the specificity of this selector is 10 */
+    /* attribut selector */
+    [data-x=a]{
+        background-color: rgb(165, 163, 42);
+    }
+    h2{
+        color: rgb(252, 5, 46);
+    }
+     /* the specificity of this selector is 10+10+10+10+1=41 */
+    /* a.jalalclass.ali-class[href]:hover{
+        color: blueviolet;
+    } */
+    .box {
+        border: 2px solid blue;
+        display: inline-block;
+        padding: 45px;
+        margin:30px;
+
+    }
+    .box2{
+        border: 2px solid blue;
+        padding: 45px;
+        margin:30px;
+         display: grid;     /* if use inline flex box is in line */
+        justify-content: center;
+    }
+    /* *{
+         margin: 0;
+         padding: 0;
+
+     } */
+     
+}
